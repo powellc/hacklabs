@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/powellc/hacklabs.png?label=ready&title=Ready)](https://waffle.io/powellc/hacklabs)
 Hack Labs
 =========
 
