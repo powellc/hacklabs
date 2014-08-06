@@ -23,7 +23,6 @@ install_requires = [
     'django-braces==1.4.0',
     'django-allauth==0.16.1',
     'django-floppyforms==1.1.1',
-    'django-zurb-foundation==5.1.1',
     'django-custom-user==0.4',
 ]
 
