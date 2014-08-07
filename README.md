@@ -1,4 +1,7 @@
 [![Stories in Ready](https://badge.waffle.io/powellc/hacklabs.png?label=ready&title=Ready)](https://waffle.io/powellc/hacklabs)
+
+[![Build Status](https://travis-ci.org/powellc/hacklabs.svg?branch=master)](https://travis-ci.org/powellc/hacklabs)
+
 Hack Labs
 =========
 
