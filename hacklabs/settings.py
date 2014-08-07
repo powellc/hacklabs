@@ -61,6 +61,7 @@ class Common(Configuration):
         'allauth.socialaccount.providers.google',
         "django_extensions",
         'floppyforms',
+        'south',
 
     )
 
