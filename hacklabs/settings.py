@@ -16,7 +16,7 @@ from configurations import Configuration, values
 class Common(Configuration):
 
     ADMINS = (
-        ('Admin', 'info@example.com'),
+        ('Admin', 'info@hacklabs.me'),
     )
 
     # You'll likely want to add your own auth model.
