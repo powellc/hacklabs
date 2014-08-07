@@ -203,7 +203,15 @@ class Dev(Common):
 
 
 class Stage(Common):
-    pass
+    DEBUG = TEMPLATE_DEBUG = True
+
+    SECRET_KEY = values.SecretValue()
+
+    EMAIL_HOST = values.Value('localhost')
+    EMAIL_HOST_USER = values.Value()
+    EMAIL_HOST_PASSWORD = values.Value()
+    EMAIL_PORT = values.Value()
+    EMAIL_USE_TLS = values.BooleanValue(False)
 
 
 class Prod(Common):
@@ -214,11 +222,11 @@ class Prod(Common):
 
     SECRET_KEY = values.SecretValue()
 
-    EMAIL_HOST = values.Value()
+    EMAIL_HOST = values.Value('localhost')
     EMAIL_HOST_USER = values.Value()
     EMAIL_HOST_PASSWORD = values.Value()
     EMAIL_PORT = values.Value()
-    EMAIL_USE_TLS = values.BooleanValue(True)
+    EMAIL_USE_TLS = values.BooleanValue(False)
 
     DSN_VALUE = values.Value()
 
