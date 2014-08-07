@@ -7,7 +7,7 @@ For more information on this file, see
 https://docs.djangoproject.com/en/1.6/howto/deployment/wsgi/
 """
 
-emport os
+import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "hacklabs.settings")
 os.environ.setdefault('DJANGO_CONFIGURATION', 'Dev')
 
