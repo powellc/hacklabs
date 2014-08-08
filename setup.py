@@ -6,14 +6,13 @@ version = __import__('hacklabs').__version__
 
 install_requires = [
     'setuptools',
-    'south==0.8.2',
-    'Django==1.6.4',
+    'Django==1.6.5',
     'django-configurations==0.8',
     'dj-database-url==0.3.0',
     'pylibmc==1.3.0',
     'boto==2.9.5',
     'django-storages==1.1.8',
-    'Pillow==2.0.0',
+    'Pillow==2.5.1',
     'django-cache-url==0.8.0',
     'werkzeug==0.9.4',
     'gunicorn==0.17.4',
@@ -25,6 +24,15 @@ install_requires = [
     'django-floppyforms==1.1.1',
     'django-custom-user==0.4',
     'raven==5.0.0',
+    'boto==2.9.5',
+    'django-storages==1.1.8',
+    'psycopg2==2.5',
+    'Markdown>2.2.0',
+    'django-sekizai>=0.7',
+    'django-mptt==0.6.0',
+    'sorl-thumbnail>=11.12.1b',
+    'six',
+    'django-nyt>=0.9.3',
 ]
 
 

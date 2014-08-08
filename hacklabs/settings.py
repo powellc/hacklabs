@@ -52,6 +52,7 @@ class Common(Configuration):
         "django.contrib.sites",
         "django.contrib.sitemaps",
         "django.contrib.staticfiles",
+        "django.contrib.humanize",
 
         'custom_user',
         'allauth',
@@ -62,7 +63,6 @@ class Common(Configuration):
         "django_extensions",
         'floppyforms',
         'south',
-
     )
 
     TEMPLATE_CONTEXT_PROCESSORS = Configuration.TEMPLATE_CONTEXT_PROCESSORS + \
