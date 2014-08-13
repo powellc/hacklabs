@@ -31,9 +31,7 @@ install_requires = [
     'Markdown>2.2.0',
     'django-sekizai>=0.7',
     'django-mptt==0.6.0',
-    'sorl-thumbnail>=11.12.1b',
-    'six',
-    'django-nyt>=0.9.3',
+    'django-bootstrap-form==3.1',
 ]
 
 

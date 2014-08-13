@@ -54,6 +54,7 @@ class Common(Configuration):
         "django.contrib.staticfiles",
         "django.contrib.humanize",
 
+        'bootstrapform',
         'custom_user',
         'allauth',
         'allauth.account',

@@ -51,6 +51,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
+            {% block menu %}
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
@@ -69,13 +70,21 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
+                    <li>
+                    <a class="" href="{% url 'account_signup' %}">Sign up</a>
+                    </li>
+                    <li>
+                    <a class="page-scroll" href="{% url 'account_login' %}">Log in</a>
+                    </li>
                 </ul>
             </div>
+            {% endblock %}
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
 
+    {% block body %}
     <!-- Intro Header -->
     <header class="intro">
         <div class="intro-body">
@@ -154,6 +163,7 @@
 
     <!-- Map Section -->
     <div id="map"></div>
+    {% endblock body %}
 
     <!-- Footer -->
     <footer>
