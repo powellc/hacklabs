@@ -2,26 +2,34 @@
 {% block menu %}
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
+                    {% if user.is_authenticated %}
+                    <li>
+                    <a class="page-scroll" href="{% url 'account_signup' %}">Dashboard</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/">Home</a>
+                    <a class="page-scroll" href="{% url 'account_signup' %}">Proposals</a>
                     </li>
+                    <li>
+                    <a class="page-scroll" href="{% url 'account_signup' %}">Projects</a>
+                    </li>
+                    <li>
+                    <a class="page-scroll" href="{% url 'account_logout' %}">Log out</a>
+                    </li>
+                    {% else %}
                     <li>
                     <a class="page-scroll" href="{% url 'account_signup' %}">Sign up</a>
                     </li>
                     <li>
                     <a class="page-scroll" href="{% url 'account_login' %}">Log in</a>
                     </li>
+                    {% endif %}
                 </ul>
             </div>
 {% endblock %}
 
 {% block body %}
     <section id="{% block section_id %}{% endblock %}" class="">
-        <div class="download-section">
+        <div class="login-container">
             <div class="container">
             {% block content %}{% endblock %}
         </div>
